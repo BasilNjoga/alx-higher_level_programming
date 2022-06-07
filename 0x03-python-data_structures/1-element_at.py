@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/pytho3
 
 def element_at(my_list, idx):
     if idx < 0:
