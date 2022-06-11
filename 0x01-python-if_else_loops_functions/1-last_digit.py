@@ -15,4 +15,4 @@ else:
     if number % 10 == 0:
         print(f"Last digit of {num * -1:d} is {(num % 10) * -1:d} and is 0")
     else:
-        print(f"Last digit of {num * -1:d} is {(num % 10) * -1:d} and {word:s}")
+        print(f"Last digit of {num * -1:d} is {(num % 10) * -1:d} {word:s}")
