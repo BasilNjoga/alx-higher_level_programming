@@ -5,8 +5,7 @@ def uppercase(str):
         n = ord(i)
         if n > 90:
             n = n - 32
-            print("{}".format(chr(n)),end='')
         else:
-            print("{}".format(chr(n)),end='')
+            n = n
+        print("{}".format(chr(n)),end='')
     print("\n")
-
