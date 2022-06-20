@@ -6,5 +6,5 @@ def safe_print_integer(value):
         j = j / 3
         print("{:d}".format(value))
         return(True)
-    except:
+    except TypeError:
         return(False)
