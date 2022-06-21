@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
 class Square:
-    def __init__(self):
-        pass
+    """an empty Square class
+
+    Attributes:
+        None
+    Args:
+        None
+    """
+    pass
