@@ -39,9 +39,21 @@ class Square:
             raise
     @property
     def size(self):
+        """
+        parameters:
+
+        param1 : self
+            this is the size of the square which in this case is protected
+        """
         return self.__size
     @size.setter
     def size(self, value):
+        """
+        parameters:
+
+        param1 : self
+            this is the size of the square which in this case is protected
+        """
         self.__size = value
         try:
             k = value / 3
