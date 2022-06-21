@@ -37,7 +37,7 @@ class Square:
         except AssertionError:
             print("size must be >= 0")
             raise
-    
+
     def area(self):
         """
         parameters:
