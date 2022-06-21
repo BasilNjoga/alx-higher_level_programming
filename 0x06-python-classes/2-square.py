@@ -30,10 +30,10 @@ class Square:
         self.__size = size
         try:
             k = size / 3
-            k = 3 / size
+            assert size >= 0
         except TypeError:
             print("size must be an integer")
-        except ZeroDivisionError:
-            raise ValueError("size must be >= 0")
-
-        
+            raise
+        except AssertionError:
+            print("size must be >= 0")
+            raise
