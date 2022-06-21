@@ -9,11 +9,13 @@ Attributes:
 
 """
 
+
 class Square:
     """an empty Square class
 
     Attributes:
         None
+
     Args:
         None
     """
