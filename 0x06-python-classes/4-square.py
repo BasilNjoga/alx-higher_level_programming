@@ -37,6 +37,7 @@ class Square:
         except AssertionError:
             print("size must be >= 0")
             raise
+
     @property
     def size(self):
         """
@@ -46,6 +47,7 @@ class Square:
             this is the size of the square which in this case is protected
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """
@@ -64,6 +66,7 @@ class Square:
         except AssertionError:
             print("size must be >= 0")
             raise
+
     def area(self):
         """
         parameters:
