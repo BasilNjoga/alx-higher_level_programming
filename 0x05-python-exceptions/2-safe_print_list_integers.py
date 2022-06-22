@@ -9,7 +9,7 @@ def safe_print_list_integers(my_list=[], x=0):
             k = my_list[j] / 3
             y.append(my_list[j])
             y.clear
-            print("{}".format(my_list[j]), end="")
+            print("{:d}".format(my_list[j]), end="")
             z = z + 1
         except TypeError:
             pass
