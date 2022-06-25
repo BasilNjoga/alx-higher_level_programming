@@ -1,0 +1,29 @@
+>>> from 0-add_integer.py import add_integer
+
+using it in examples
+
+>>> add_integer(1, 2)
+3
+
+test with negative numbers, should work
+
+>>> add_integer(100, -2)
+98
+
+if atleast one argument is not given it should fail 
+
+>>> add_integer()
+
+if one argument is given it should work as b is given still
+
+>>> add_integer(2)
+100
+
+if a float is given it should return an integer sum
+
+>>> add_integer(100.3, -2)
+98
+
+if a string is given it should fail
+
+add_integer(4, "school")
