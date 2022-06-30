@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 """
-    This is a module about matrix divided and includes a single 
-    function matrix_divided
-    
+This is a module about matrix divided and includes a single
+function matrix_divided
 """
 
 
@@ -15,11 +14,12 @@ def matrix_divided(matrix, div):
         matrix: The two dimensional matrix
         div:number to be divided by
     """
-    if not isinstance(matrix,list):
-        raise TypeError("matrix must be a matrix(list of lists) of integers/floats")
+    err = "matrix must be a matrix(list of lists) of integers/floats"
+    if not isinstance(matrix, list):
+        raise TypeError(err)
     new_matrix = list(map(list, matrix))
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
-            new_matrix[i][j] = round(new_matrix[i][j] / div,2)
+            new_matrix[i][j] = round(new_matrix[i][j] / div, 2)
 
     return new_matrix
