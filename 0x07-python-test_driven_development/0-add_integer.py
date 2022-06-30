@@ -12,10 +12,8 @@ def add_integer(a, b=98):
     it adds two integers and returns the sum
 
     """
-    if type(a) is not int :
+    if isinstance(a,str):
         raise TypeError("a must be an integer")
-    elif type(b) is not int :
+    if isinstance(b,str):
         raise TypeError("b must be an integer")
-    return a + b
-
-print(add_integer(1, 2))
+    return int (a + b)
