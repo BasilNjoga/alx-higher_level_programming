@@ -1,0 +1,38 @@
+"""
+To import the file, returns nothing
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+"""
+for a normal string pulled it should print the output with a new line character
+after
+"""
+>>> text_indentation("""Hello,my name is Basil. It is very nice to meet you. What is your name?""")
+Hello,my name is Basil.
+<BLANKLINE>
+ It is very nice to meet you.
+<BLANKLINE>
+ What is your name?
+<BLANKLINE>
+
+"""
+Incase a wrong type is added it should raise a TypeError
+"""
+
+>>> text_indentation(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\basil\alx-higher_level_programming\0x07-python-test_driven_development\5-text_indentation.py", line 17, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+
+"""
+Incase no input is given it should raise a TypeError also
+"""
+
+>>> text_indentation()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: text_indentation() missing 1 required positional argument: 'text'
