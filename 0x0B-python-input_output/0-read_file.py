@@ -14,5 +14,5 @@ def read_file(filename=""):
         filename: contains the name of the file
     """
     with open(filename, encoding="utf-8") as f:
-        for line in f:
-            print(line, end="")
+        read_data = f.read()
+        print("{:s}".format(read_data))
