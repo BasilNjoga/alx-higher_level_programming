@@ -6,6 +6,7 @@ it contains a single file 1-write_file.py
 which writes to a file
 """
 
+
 def write_file(filename="", text=""):
     """
     function that writes to a file
