@@ -13,6 +13,6 @@ def read_file(filename=""):
     Args:
         filename: contains the name of the file
     """
-    with open(filename, encoding="utf-8") as f:
+    with open(filename, encoding="UTF8") as f:
         read_data = f.read()
         print("{:s}".format(read_data))
