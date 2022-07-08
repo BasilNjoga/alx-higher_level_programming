@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-a = (1)
-b = (1)
+a = ()
+b = ()
 print(a is b)
