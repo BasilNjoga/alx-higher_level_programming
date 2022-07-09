@@ -10,5 +10,7 @@ def write_file(filename="", text=""):
     """
     function that writes to a file
     """
+    filename = "newfile"
     with open(filename, mode="w", encoding="utf-8") as f:
         f.write(text)
+
