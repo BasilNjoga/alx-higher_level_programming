@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 This is module on writing a file
 it contains a single file 1-write_file.py
