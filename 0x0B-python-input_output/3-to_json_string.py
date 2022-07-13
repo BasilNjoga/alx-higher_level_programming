@@ -11,4 +11,6 @@ def to_json_string(my_obj):
     This is a function that returns a function 
     representation of a string
     """
-    return json.loads(my_obj)
+    d1 = json.dumps(my_obj)
+    return d1
+
