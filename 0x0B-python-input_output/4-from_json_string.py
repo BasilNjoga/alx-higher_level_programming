@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This is a modole on python input outputs 
+This is a modole on python input outputs
 along with json decoding and encoding
 """
 import json
