@@ -3,6 +3,8 @@
 This is a modole on python input outputs 
 along with json decoding and encoding
 """
+import json
+
 
 def from_json_string(my_str):
     """
