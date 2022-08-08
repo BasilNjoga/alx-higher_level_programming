@@ -28,4 +28,4 @@ def calculator(argv):
 
 if __name__ == "__main__":
     import sys
-    print("{:d}".format(calculator(sys.argv)))
+    calculator(sys.argv)
