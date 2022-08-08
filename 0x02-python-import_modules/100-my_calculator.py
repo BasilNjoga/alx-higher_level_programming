@@ -4,7 +4,6 @@ import calculator_1
 
 def calculator(argv):
     n = len(argv) - 1
-    finalcomp = 0
     if n < 3:
         print("./100-my_calculator.py <a> <operator> <b>")
         return 1
@@ -12,6 +11,7 @@ def calculator(argv):
         a = int(argv[1])
         b = int(argv[3])
         operator = argv[2]
+        finalcomp = 0
         if operator == "+":
             finalcomp = calculator_1.add(a, b)
         elif operator == "-":
@@ -23,7 +23,7 @@ def calculator(argv):
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             return 1
-    print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
+        print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
 
 if __name__ == "__main__":
     import sys
