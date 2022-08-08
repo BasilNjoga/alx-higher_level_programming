@@ -25,8 +25,16 @@ def calculator(argv):
             print("Unknown operator. Available operators: +, -, * and /")
             return 1
         print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
+<<<<<<< HEAD
     return False
 if __name__ == "__main__":
     """import sys"""
     """calculator(sys.argv)"""
     return False
+=======
+
+
+if __name__ == "__main__":
+    import sys
+    calculator(sys.argv)
+>>>>>>> 11abb7fa1ef7bde3ba265b541750fc4c98442ec9
