@@ -4,14 +4,15 @@ import calculator_1
 
 def calculator(argv):
     n = len(argv) - 1
+    a = int(argv[1])
+    b = int(argv[3])
+    operator = argv[2]
+    finalcomp = 0
     if n < 3:
         print("./100-my_calculator.py <a> <operator> <b>")
-        return 1
+        break
+        return False
     else:
-        a = int(argv[1])
-        b = int(argv[3])
-        operator = argv[2]
-        finalcomp = 0
         if operator == "+":
             finalcomp = calculator_1.add(a, b)
         elif operator == "-":
@@ -24,7 +25,8 @@ def calculator(argv):
             print("Unknown operator. Available operators: +, -, * and /")
             return 1
         print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
-
+    return False
 if __name__ == "__main__":
-    import sys
-    calculator(sys.argv)
+    """import sys"""
+    """calculator(sys.argv)"""
+    return False
