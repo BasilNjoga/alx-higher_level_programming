@@ -25,6 +25,7 @@ def calculator(argv):
             return 1
         print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
 
+
 if __name__ == "__main__":
     import sys
     calculator(sys.argv)
