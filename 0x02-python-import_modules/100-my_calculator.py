@@ -24,7 +24,6 @@ def calculator(argv):
             print("Unknown operator. Available operators: +, -, * and /")
             return 1
     print("{:d} {:s} {:d} = {:d}".format(a, operator, b, finalcomp))
-    return 0
 
 if __name__ == "__main__":
     import sys
