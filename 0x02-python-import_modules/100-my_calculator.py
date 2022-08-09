@@ -5,7 +5,7 @@ import calculator_1
 def calculator(argv):
     n = len(argv) - 1
     if n < 3:
-        print("./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         return 1
     else:
         a = int(argv[1])
