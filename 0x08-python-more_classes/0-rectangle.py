@@ -11,12 +11,5 @@ Attributes:
 
 
 class Rectangle:
-    """an empty Rectangle class
-
-    Attributes:
-        None
-
-    Args:
-        None
-    """
+    """an empty Rectangle class"""
     pass
