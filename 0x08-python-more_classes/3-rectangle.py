@@ -44,8 +44,11 @@ class Rectangle:
 
     def __str__(self):
         rect = []
-        for i in range(self.height):
-            for j in range(self.width):
-                rect.append("#")
-            rect.append("\n")
+        if self.width == 0 or self.height == 0:
+            return rect
+        else:
+            for i in range(self.height):
+                for j in range(self.width):
+                    rect.append("#")
+                rect.append("\n")
         return ''.join(rect)
