@@ -9,9 +9,14 @@ def calculator(argv):
     operator = argv[2]
     finalcomp = 0
     if n < 3:
+<<<<<<< HEAD
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        return 1
+=======
         print("./100-my_calculator.py <a> <operator> <b>")
         break
         return False
+>>>>>>> 8aa0bb63feedf25d4fca6c0923043281297fcc6d
     else:
         if operator == "+":
             finalcomp = calculator_1.add(a, b)
