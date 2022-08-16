@@ -9,6 +9,7 @@ def print_sorted(self):
     class Mylist(lists):
         """ My list class that inherits from another """
         def __init__(self):
+            """ This is a super unit function"""
             super().__init__()
 
     u = MYlist()
