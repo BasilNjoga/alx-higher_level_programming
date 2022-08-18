@@ -54,13 +54,5 @@ class Rectangle:
                     rect.append("\n")
         return ''.join(rect)
     def ___repr__(self):
-        rect = []
-        if self.width == 0 or self.height == 0:
-            return ("")
-        else:
-            for i in range(self.height):
-                for j in range(self.width):
-                    rect.append("#")
-                if i < self.height - 1:
-                    rect.append("\n")
-        return ''.join(rect)
+       rect = "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
+       return rect
