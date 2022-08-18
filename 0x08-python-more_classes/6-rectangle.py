@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from itertools import count
 """ This is a module that defines a rectangle """
 
 
