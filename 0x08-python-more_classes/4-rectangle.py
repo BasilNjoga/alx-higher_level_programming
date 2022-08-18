@@ -53,6 +53,9 @@ class Rectangle:
                 if i < self.height - 1:
                     rect.append("\n")
         return ''.join(rect)
-    def ___repr__(self):
-       rect = "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
-       return rect
+
+    def __repr__(self):
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
