@@ -5,10 +5,10 @@
 class Rectangle:
     """ This is a class called rectangle """
     number_of_instances = 0
-    print_symbol = "#"
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0,print_symbol="#"):
         self.width = width
         self.height = height
+        self.print_symbol = print_symbol
         Rectangle.number_of_instances += 1
 
     @property
@@ -51,7 +51,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    rect.append(Rectangle.print_symbol)
+                    rect.append(self.print_symbol)
                 if i < self.height - 1:
                     rect.append("\n")
         return ''.join(rect)
