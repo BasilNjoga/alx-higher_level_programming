@@ -51,7 +51,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    rect.append("#")
+                    rect.append(Rectangle.print_symbol)
                 if i < self.height - 1:
                     rect.append("\n")
         return ''.join(rect)
