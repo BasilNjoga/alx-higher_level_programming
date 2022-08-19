@@ -13,9 +13,9 @@ def add_integer(a, b=98):
     it adds two integers and returns the sum
 
     """
-    if isinstance (a, float):
+    if isinstance(a, float):
         a = int(a)
-    if isinstance (b, float):
+    if isinstance(b, float):
         b = int(b)
     if not isinstance(a, int) or a is None:
         raise TypeError("a must be an integer")
