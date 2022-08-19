@@ -25,3 +25,9 @@ if a string is given it should result in an error
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
+
+if the value None is given as input
+>>> add_integer(None, 3)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
