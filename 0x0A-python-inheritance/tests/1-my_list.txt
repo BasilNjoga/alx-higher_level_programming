@@ -1,12 +1,16 @@
 """ This is a text function of the 1-my list test """
 
+check importation
 >>> MyList = __import__('1-my_list').MyList
 
-
+checks if the list is instatised
 >>> my_list = MyList()
+
+checks if the class is passed an empty list
 >>> my_list.print_sorted()
 []
 
+adding the values one by one 
 >>> my_list.append(3)
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -18,3 +22,12 @@
 To check if it returns a new list
 >>> print(my_list)
 [3, 1, 4, 2, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(-3)
+>>> my_list.append(-1)
+>>> my_list.append(-4)
+>>> my_list.append(-2)
+>>> my_list.append(-5)
+>>> my_list.print_sorted()
+[-5, -4, -3, -2, -1]
