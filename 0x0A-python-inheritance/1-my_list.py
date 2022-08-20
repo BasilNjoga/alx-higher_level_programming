@@ -19,7 +19,7 @@ class MyList(list):
         self.newnumbers = self.numbers[:]
         for j in range(len(self.newnumbers)):
             for i in range(len(self.newnumbers) - 1):
-                if self.numbers[i] > self.newnumbers[i+1]:
+                if self.newnumbers[i] > self.newnumbers[i+1]:
                     newlist = self.newnumbers[i]
                     self.newnumbers[i] = self.newnumbers[i+1]
                     self.newnumbers[i+1] = newlist
