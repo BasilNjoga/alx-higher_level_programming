@@ -14,11 +14,13 @@ class list:
 
 class MyList(list):
     """This is a list that inherits from another """
+    
     def print_sorted(self):
-        for j in range(len(self.numbers)):
-            for i in range(len(self.numbers) - 1):
-                if self.numbers[i] > self.numbers[i+1]:
-                    newlist = self.numbers[i]
-                    self.numbers[i] = self.numbers[i+1]
-                    self.numbers[i+1] = newlist
-        print(self.numbers)
+        self.newnumbers = self.numbers[:]
+        for j in range(len(self.newnumbers)):
+            for i in range(len(self.newnumbers) - 1):
+                if self.numbers[i] > self.newnumbers[i+1]:
+                    newlist = self.newnumbers[i]
+                    self.newnumbers[i] = self.newnumbers[i+1]
+                    self.newnumbers[i+1] = newlist
+        print(self.newnumbers)
