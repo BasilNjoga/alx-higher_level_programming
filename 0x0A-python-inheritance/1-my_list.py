@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This is a module that inherist a list """
 class list:
 
     def __init__(self):
