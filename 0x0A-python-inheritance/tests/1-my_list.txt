@@ -1,0 +1,6 @@
+""" This is a text function of the 1-my list test """
+
+>>> MyList = __import__('1-my_list').MyList
+
+
+>>> my_list = MyList()
