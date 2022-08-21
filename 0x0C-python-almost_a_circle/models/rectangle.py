@@ -70,3 +70,9 @@ class Rectangle(Base):
             for i in range(self.__width):
                 print("#", end="")
             print("\n", end="")
+
+    def __repr__(self):
+        output = ("[Rectangle] (" + str(self.id) + ")" + " " + str(self.__x))
+        output += ("/" + str(self.__y) + " " + "-" + " ")
+        output += (str(self.__width) + "/" + str(self.__height))
+        return output
