@@ -12,7 +12,7 @@ class Base:
     public attributes self and None
     """
     nb_object = 0
-    
+
     def __init__(self, id=None):
         if id is not None:
             self.id = id
@@ -20,4 +20,3 @@ class Base:
             Base.nb_object += 1
             self.__nb_object = Base.nb_object
             self.id = self.__nb_object
-        
