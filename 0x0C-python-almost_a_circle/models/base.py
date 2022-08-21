@@ -11,11 +11,13 @@ class Base:
     This is a class that contains a private attribute nb_object along with
     public attributes self and None
     """
-
+    nb_object = 0
+    
     def __init__(self, id=None):
-        self.__nb_object = 0
-        if id is None:
-            self.__nb_object += 1
-            self.id = self. __nb_object
-        else:
+        if id is not None:
             self.id = id
+        else:
+            Base.nb_object += 1
+            self.__nb_object = Base.nb_object
+            self.id = self.__nb_object
+        
