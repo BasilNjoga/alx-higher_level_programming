@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+from base import Base
 
 
 class myclass:
@@ -19,7 +20,7 @@ class myclass:
         return str(self.__nb_object)
 
 
-b1 = myclass()
-b2 = myclass()
-b3 = myclass()
+b1 = Base()
+b2 = Base()
+b3 = Base()
 print(b3)

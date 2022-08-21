@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ This is a class that inherits from the Base module """
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -40,5 +41,5 @@ class Rectangle(Base):
         return self.y
 
     @y.setter
-    def y(self, width):
+    def y(self, y):
         self.__y = y
