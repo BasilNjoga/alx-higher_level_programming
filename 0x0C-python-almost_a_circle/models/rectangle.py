@@ -80,6 +80,7 @@ class Rectangle(Base):
         output += (str(self.__width) + "/" + str(self.__height))
         return output
     def update(self, *args):
+        """ This function updates things """
         self.id = args[1]
         self.width = args[2]
         self.height = args[3]
