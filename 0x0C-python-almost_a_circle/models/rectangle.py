@@ -79,3 +79,9 @@ class Rectangle(Base):
         output += ("/" + str(self.__y) + " " + "-" + " ")
         output += (str(self.__width) + "/" + str(self.__height))
         return output
+    def update(self, *args):
+        self.id = args[1]
+        self.width = args[2]
+        self.height = args[3]
+        self.x = args[4]
+        self.y = args[5]
