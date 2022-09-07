@@ -1,10 +1,27 @@
-#!/usr/bin/node
+class Person {
 
-class Employee {
 
-  constructor() {
+
+  name;
+
+
+
+  constructor(name) {
+
+    this.name = name;
+
+  }
+
+
+
+  introduceSelf() {
+
+    console.log(`Hi! I'm ${this.name}`);
+
+  }
+
+
+
 }
 
-}
 
-const employee1 = new Employee()
