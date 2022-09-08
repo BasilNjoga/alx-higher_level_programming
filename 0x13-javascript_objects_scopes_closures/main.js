@@ -1,17 +1,13 @@
 #!/usr/bin/node
 
-const Rectangle = require('./3-rectangle');
+const Square = require('./5-square');
 
 
 
-const r1 = new Rectangle(2, 3);
+const s1 = new Square(4);
 
-r1.print();
+s1.print();
 
+s1.double();
 
-
-const r2 = new Rectangle(10, 5);
-
-r2.print();
-
-
+s1.print();
