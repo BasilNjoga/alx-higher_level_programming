@@ -15,6 +15,11 @@ int check_cycle(listint_t *list)
     listint_t *new;
     listint_t *runner;
 
+    if (list == NULL)
+    {
+        return (0);
+    }
+
     new = list;
     runner = list->next;
     while (runner != NULL)
