@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #This is script that takes a url using curl
-curl -size-upload $1
+curl -s -size_upload $1
