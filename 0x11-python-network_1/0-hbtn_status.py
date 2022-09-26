@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ This script fetches a url """
-import urlib.request
+import urllib.request
 
 if __name__ == "__main__":
     with urlib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
