@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This script takes a url and displays the value of a header
+"""
 
 from sys import argv
 import urllib.request
