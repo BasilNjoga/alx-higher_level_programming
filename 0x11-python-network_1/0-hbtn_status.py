@@ -7,6 +7,6 @@ if __name__ == "__main__":
         html = response.read()
 
 print('Body response:')
-print("\t - type: <class 'bytes'>")
-print("\t - content: b'OK'")
-print("\t - utf8 content: OK")
+print("\t - type: {}".format(html))
+print("\t - content: {}".format(html))
+print("\t - utf8 content: {}".format(html))
