@@ -9,15 +9,9 @@ request (url, function (error, response, body) {
   const res = JSON.parse(body);
   for(let i = 0; i < res.length; i++) {
     let obj = res[i];
-    for (let j = 1; j < 11; j++) {
-      while (obj.userId = j) {
-	if (obj.completed = "true") {
-        count = count + 1;
-        }
-      }
-      console.log('${j}: ${count}');
-      count = 0;
+    if (obj.completed = "true") {
+      count = count + 1;
     }
-}
+    }
   console.log(count);
 });
