@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This script sends a a request and displays the status code"""
+""" 
+This script sends a a request and displays the status code required in the call
+"""
 
 import requests
 from sys import argv
