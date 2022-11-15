@@ -12,7 +12,7 @@ if __name__ == "__main__":
     r = requests.post('http://0.0.0.0:5000/search_user', data={'q': value})
     try:
         data = r.json()
-    except JSONDecodeError:
+    except ValueError:
         print("Not a valid JSON")
 
     try:
