@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-""" This script sends a a request and displays the status code """
+"""This script sends a a request and displays the status code"""
 import requests
 from sys import argv
 
 r = requests.get(argv[1])
-print("Error code: {}".format(r.status_code))
+if (r.status_code >= 400):
+    print("Error code: {}".format(r.status_code))
+else:
+    print(r.text)
