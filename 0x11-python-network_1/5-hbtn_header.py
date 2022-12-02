@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """ This is  script that fetches a url using requests """
 import requests
-import sys
+from sys import argv
 
 if __name__ == "__main__":
-    r = requests.get('https://alx-intranet.hbtn.io/status')
-    print(r.headers['X-Request-Id'])
+    r = requests.get(argv[1])
+    try:
+        print(r.headers['X-Request-Id'])
+    except KeyError:
+        print(None)
