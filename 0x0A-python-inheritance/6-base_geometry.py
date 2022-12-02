@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-""" This is simpy a base class """
+""" Empty class """
 
 
 class BaseGeometry:
-    """ this is a base class """
+    """ Empty class """
     def area(self):
-        raise
-    
+        raise Exception("area() is not implemented")
